@@ -38,9 +38,9 @@ private:
 	void SetInputComponent();
 
 	FHitResult GetFirstPhysicsBodyInReach() const;
-	FVector GetLineTraceEnd() const;
+	FVector GetPlayerReach() const;
+	FVector GetPlayerPosition() const;
 
-	FVector PlayerViewPointLocation;
-	FRotator PlayerViewPointRotation;
+	
 
 };
