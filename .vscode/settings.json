@@ -1,0 +1,10 @@
+{
+	"files.exclude": {
+		"G:/Unreal Projects/Escape2/.vs": true,
+		"G:/Unreal Projects/Escape2/.vscode": true,
+		"G:/Unreal Projects/Escape2/Content": true,
+		"G:/Unreal Projects/Escape2/DerivedDataCache": true,
+		"G:/Unreal Projects/Escape2/Intermediate": true,
+		"G:/Unreal Projects/Escape2/Saved": true
+	}
+}

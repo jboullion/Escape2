@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"G:\\Unreal Projects\\Escape2\\Source\\Escape2\\Escape2.Build.cs",
+		"G:\\Unreal Projects\\Escape2\\Source\\Escape2.Target.cs",
+		"G:\\Unreal Projects\\Escape2\\Source\\Escape2Editor.Target.cs"
+	],
+	"EngineVersion": "4.25.1"
+}

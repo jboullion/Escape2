@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Escape2.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{1A09E3B2-9CF9-4E78-B4F4-A282201762D3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Escape2.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Escape2Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Escape2.code-workspace" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{C14E18D8-2CB4-4729-A548-D92D099E202D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Escape2">
+      <UniqueIdentifier>{FEB0A624-3E0B-40B6-8723-10AA72A46B5A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Escape2\Escape2.Build.cs">
+      <Filter>Source\Escape2</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Escape2\Escape2.cpp">
+      <Filter>Source\Escape2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Escape2\Escape2.h">
+      <Filter>Source\Escape2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Escape2\Escape2GameModeBase.cpp">
+      <Filter>Source\Escape2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Escape2\Escape2GameModeBase.h">
+      <Filter>Source\Escape2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Escape2\Grabber.cpp">
+      <Filter>Source\Escape2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Escape2\Grabber.h">
+      <Filter>Source\Escape2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Escape2\OpenDoor.cpp">
+      <Filter>Source\Escape2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Escape2\OpenDoor.h">
+      <Filter>Source\Escape2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Escape2\WorldPosition.cpp">
+      <Filter>Source\Escape2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Escape2\WorldPosition.h">
+      <Filter>Source\Escape2</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

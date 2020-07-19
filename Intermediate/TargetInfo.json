@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Escape2",
+			"Path": "G:\\Unreal Projects\\Escape2\\Source\\Escape2.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Escape2Editor",
+			"Path": "G:\\Unreal Projects\\Escape2\\Source\\Escape2Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

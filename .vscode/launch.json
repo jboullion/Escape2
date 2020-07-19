@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Escape2 (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Escape2 Win64 Debug Build",
+			"program": "G:\\Unreal Projects\\Escape2\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Escape2 (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Escape2 Win64 DebugGame Build",
+			"program": "G:\\Unreal Projects\\Escape2\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Escape2 (Development)",
+			"request": "launch",
+			"preLaunchTask": "Escape2 Win64 Development Build",
+			"program": "G:\\Unreal Projects\\Escape2\\Binaries\\Win64\\UE4.exe",
+			"args": [
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Escape2 (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "Escape2 Win64 Shipping Build",
+			"program": "G:\\Unreal Projects\\Escape2\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Escape2 (Test)",
+			"request": "launch",
+			"preLaunchTask": "Escape2 Win64 Test Build",
+			"program": "G:\\Unreal Projects\\Escape2\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Escape2Editor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Escape2Editor Win64 Debug Build",
+			"program": "D:\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"G:\\Unreal Projects\\Escape2\\Escape2.uproject"
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Escape2Editor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Escape2Editor Win64 DebugGame Build",
+			"program": "D:\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"G:\\Unreal Projects\\Escape2\\Escape2.uproject"
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Escape2Editor (Development)",
+			"request": "launch",
+			"preLaunchTask": "Escape2Editor Win64 Development Build",
+			"program": "D:\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"G:\\Unreal Projects\\Escape2\\Escape2.uproject"
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "D:\\Epic Games\\UE_4.25\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"G:\\Unreal Projects\\Escape2\\Escape2.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "D:\\Epic Games\\UE_4.25"
+		}
+	]
+}
