@@ -33,7 +33,7 @@ void UGrabber::FindPhysicsHandle()
 {
 	//Check for physics handle component
 	PhysicsHandle = GetOwner()->FindComponentByClass<UPhysicsHandleComponent>();
-	if (PhysicsHandle == nullptr)
+	if (!PhysicsHandle)
 	{
 		UE_LOG(LogTemp, Error, TEXT("PhysicsHandle component missing: %s"),
 			*GetOwner()->GetName()
@@ -55,12 +55,6 @@ void UGrabber::SetInputComponent()
 		InputComponent->BindAction("Grab", IE_Pressed, this, &UGrabber::Grab);
 		InputComponent->BindAction("Grab", IE_Released, this, &UGrabber::Release);
 	}
-	else
-	{
-		UE_LOG(LogTemp, Error, TEXT("InputComponent component missing: %s"),
-			*GetOwner()->GetName()
-		);
-	}
 
 }
 
@@ -68,10 +62,13 @@ void UGrabber::SetInputComponent()
 void UGrabber::Grab()
 {
 	FHitResult HitResult = GetFirstPhysicsBodyInReach();
+	AActor* ActorHit = HitResult.GetActor();
 
 	// If we grabbed something, attach to physics handle
-	if (HitResult.GetActor()) 
+	if (ActorHit) 
 	{
+		if (!PhysicsHandle) return;
+
 		UPrimitiveComponent* ComponentToGrab = HitResult.GetComponent();
 
 		PhysicsHandle->GrabComponentAtLocation(
@@ -85,6 +82,8 @@ void UGrabber::Grab()
 
 void UGrabber::Release()
 {
+	if (!PhysicsHandle) return;
+
 	PhysicsHandle->ReleaseComponent();
 }
 
@@ -138,7 +137,7 @@ FHitResult UGrabber::GetFirstPhysicsBodyInReach() const
 		TraceParams
 	);
 
-	AActor* HitActor = Hit.GetActor();
+	/*AActor* HitActor = Hit.GetActor();
 
 	if (HitActor) {
 
@@ -147,7 +146,7 @@ FHitResult UGrabber::GetFirstPhysicsBodyInReach() const
 		UE_LOG(LogTemp, Warning, TEXT("HitObjectName: %s"),
 			*HitObjectName
 		);
-	}
+	}*/
 
 	return Hit;
 }
@@ -157,6 +156,8 @@ FHitResult UGrabber::GetFirstPhysicsBodyInReach() const
 void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+
+	if (!PhysicsHandle) return;
 
 	if (PhysicsHandle->GrabbedComponent) {
 		PhysicsHandle->SetTargetLocation(

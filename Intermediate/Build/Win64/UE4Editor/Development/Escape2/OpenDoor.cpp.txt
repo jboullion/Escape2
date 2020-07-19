@@ -3,3 +3,5 @@ g:\unreal projects\escape2\source\escape2\OpenDoor.h
 D:\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/TriggerVolume.h
 D:\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TriggerVolume.generated.h
 G:\Unreal Projects\Escape2\Intermediate\Build\Win64\UE4Editor\Inc\Escape2\OpenDoor.generated.h
+D:\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
+D:\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h

@@ -10,7 +10,6 @@
 
 
 
-
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class ESCAPE2_API UOpenDoor : public UActorComponent
 {
@@ -29,23 +28,29 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	void OpenDoor(float DeltaTime);
 	void CloseDoor(float DeltaTime);
+	float TotalMassOfActors() const;
+	void GetPressurePlate() const;
+	void FindAudioComponent();
 
 private:
 	float InitialYaw;
 	float CurrentYaw;
+	bool DoorOpen = false;
 
 	UPROPERTY(EditAnywhere)
 	float TargetYaw = 85.f;
 
 	UPROPERTY(EditAnywhere)
-	ATriggerVolume* PressurePlate;
-
-	UPROPERTY(EditAnywhere)
-	AActor* ActorThatOpens;
+	ATriggerVolume* PressurePlate = nullptr;
 
 	float DoorLastOpened = 0.f;
 
 	UPROPERTY(EditAnywhere)
 	float DoorClosedDelay = 1.f;
 
+	UPROPERTY(EditAnywhere)
+	float TriggerMass = 60.f;
+
+	UPROPERTY()
+	UAudioComponent* AudioComponent = nullptr;
 };

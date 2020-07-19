@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ESCAPE2_OpenDoor_generated_h
 
-#define Escape2_Source_Escape2_OpenDoor_h_17_SPARSE_DATA
-#define Escape2_Source_Escape2_OpenDoor_h_17_RPC_WRAPPERS
-#define Escape2_Source_Escape2_OpenDoor_h_17_RPC_WRAPPERS_NO_PURE_DECLS
-#define Escape2_Source_Escape2_OpenDoor_h_17_INCLASS_NO_PURE_DECLS \
+#define Escape2_Source_Escape2_OpenDoor_h_16_SPARSE_DATA
+#define Escape2_Source_Escape2_OpenDoor_h_16_RPC_WRAPPERS
+#define Escape2_Source_Escape2_OpenDoor_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define Escape2_Source_Escape2_OpenDoor_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOpenDoor(); \
 	friend struct Z_Construct_UClass_UOpenDoor_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(UOpenDoor)
 
 
-#define Escape2_Source_Escape2_OpenDoor_h_17_INCLASS \
+#define Escape2_Source_Escape2_OpenDoor_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesUOpenDoor(); \
 	friend struct Z_Construct_UClass_UOpenDoor_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UOpenDoor)
 
 
-#define Escape2_Source_Escape2_OpenDoor_h_17_STANDARD_CONSTRUCTORS \
+#define Escape2_Source_Escape2_OpenDoor_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOpenDoor(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOpenDoor) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Escape2_Source_Escape2_OpenDoor_h_17_ENHANCED_CONSTRUCTORS \
+#define Escape2_Source_Escape2_OpenDoor_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UOpenDoor(UOpenDoor&&); \
@@ -58,34 +58,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOpenDoor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UOpenDoor)
 
 
-#define Escape2_Source_Escape2_OpenDoor_h_17_PRIVATE_PROPERTY_OFFSET \
+#define Escape2_Source_Escape2_OpenDoor_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__TargetYaw() { return STRUCT_OFFSET(UOpenDoor, TargetYaw); } \
 	FORCEINLINE static uint32 __PPO__PressurePlate() { return STRUCT_OFFSET(UOpenDoor, PressurePlate); } \
-	FORCEINLINE static uint32 __PPO__ActorThatOpens() { return STRUCT_OFFSET(UOpenDoor, ActorThatOpens); } \
-	FORCEINLINE static uint32 __PPO__DoorClosedDelay() { return STRUCT_OFFSET(UOpenDoor, DoorClosedDelay); }
+	FORCEINLINE static uint32 __PPO__DoorClosedDelay() { return STRUCT_OFFSET(UOpenDoor, DoorClosedDelay); } \
+	FORCEINLINE static uint32 __PPO__TriggerMass() { return STRUCT_OFFSET(UOpenDoor, TriggerMass); } \
+	FORCEINLINE static uint32 __PPO__AudioComponent() { return STRUCT_OFFSET(UOpenDoor, AudioComponent); }
 
 
-#define Escape2_Source_Escape2_OpenDoor_h_14_PROLOG
-#define Escape2_Source_Escape2_OpenDoor_h_17_GENERATED_BODY_LEGACY \
+#define Escape2_Source_Escape2_OpenDoor_h_13_PROLOG
+#define Escape2_Source_Escape2_OpenDoor_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Escape2_Source_Escape2_OpenDoor_h_17_PRIVATE_PROPERTY_OFFSET \
-	Escape2_Source_Escape2_OpenDoor_h_17_SPARSE_DATA \
-	Escape2_Source_Escape2_OpenDoor_h_17_RPC_WRAPPERS \
-	Escape2_Source_Escape2_OpenDoor_h_17_INCLASS \
-	Escape2_Source_Escape2_OpenDoor_h_17_STANDARD_CONSTRUCTORS \
+	Escape2_Source_Escape2_OpenDoor_h_16_PRIVATE_PROPERTY_OFFSET \
+	Escape2_Source_Escape2_OpenDoor_h_16_SPARSE_DATA \
+	Escape2_Source_Escape2_OpenDoor_h_16_RPC_WRAPPERS \
+	Escape2_Source_Escape2_OpenDoor_h_16_INCLASS \
+	Escape2_Source_Escape2_OpenDoor_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Escape2_Source_Escape2_OpenDoor_h_17_GENERATED_BODY \
+#define Escape2_Source_Escape2_OpenDoor_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Escape2_Source_Escape2_OpenDoor_h_17_PRIVATE_PROPERTY_OFFSET \
-	Escape2_Source_Escape2_OpenDoor_h_17_SPARSE_DATA \
-	Escape2_Source_Escape2_OpenDoor_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	Escape2_Source_Escape2_OpenDoor_h_17_INCLASS_NO_PURE_DECLS \
-	Escape2_Source_Escape2_OpenDoor_h_17_ENHANCED_CONSTRUCTORS \
+	Escape2_Source_Escape2_OpenDoor_h_16_PRIVATE_PROPERTY_OFFSET \
+	Escape2_Source_Escape2_OpenDoor_h_16_SPARSE_DATA \
+	Escape2_Source_Escape2_OpenDoor_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	Escape2_Source_Escape2_OpenDoor_h_16_INCLASS_NO_PURE_DECLS \
+	Escape2_Source_Escape2_OpenDoor_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
